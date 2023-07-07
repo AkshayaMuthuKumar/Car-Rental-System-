@@ -1,0 +1,293 @@
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .front {
+    height : 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .bottom {
+    height : 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    padding: 16px 24px;
+    padding-left: 1000px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    font-family: bold;
+  }
+  
+  .menu li {
+    margin-right: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .user-actions button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .user-actions {
+    align-items: center;
+  }
+  
+  .hero {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  background-image: url(home.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#explore-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-filter {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .search-bar input[type="text"],
+  .search-bar input[type="date"],
+  .search-bar input[type="time"],
+  .search-bar button {
+    margin-right: 10px;
+  }
+
+  #search-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+  }
+  
+  .filter-options {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .filter-options label {
+    margin-right: 10px;
+  }
+  
+  .filter-options select {
+    padding: 5px;
+  }
+
+  .car-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .car-card {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .car-card #Price {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+
+  .car-card img {
+    width: 100px;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .car-card hr {
+    height : 1.5px;
+    color:black;
+    background-color:black     
+  }
+
+  .car-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .car-card p {
+    margin-bottom: 5px;
+  }
+  
+  .view-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor:pointer;
+  }
+
+  #popup,#popup1,#popup2,#popup3,#popup4,#popup5,#popup6,#popup7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #popup-details .visible {
+    display: none;
+    visibility: visible;
+  }
+  
+  #popup-details #car-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    height : 500px;
+  }
+  
+  #popup-details #close-btn {
+    margin-bottom: 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor:pointer;
+  }
+
+  #popup-details .car-images {
+    margin-left: 170px;
+    margin-right: 200px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    height : 500px;
+  }
+  
+  .input-group {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  #Register {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor:pointer;
+  }
+
+ .bottomimg {
+  width: 100%;
+  height : auto;
+ }
+
+ footer {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+ }
+  
+ footer h3 {
+  font-family: bold;
+ }
+
+.bottom_btn {
+  background-color: transparent;
+  border: none;
+  
+}
+
+.visible {
+  display: block;
+}
+

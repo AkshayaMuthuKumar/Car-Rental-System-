@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "car.css" rel="stylesheet">
+        <script src = "car.js"></script>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Car Rental System</title>
+
+    </head>
+
+    <body>
+      <div class= "container hidden" id = "container">
+        <form id="form">
+          <h2><b>LOGIN DETAILS</b></h2>
+            <div class="input-group">
+                <label id="label">Username</label> <br/>
+                <input type="text" id="username" size = 50> <br/> <br/>
+                <label id="label">Email</label> <br/>
+                <input type="text" id="email" size = 50> <br/> <br/>
+                <label id="label">Password</label> <br/>
+                <input type="password" id="password" size = 50> <br/> <br/> 
+                <label id="label">Confirm Password</label> <br/>
+                <input type="password" id="cpassword" size = 50> <br/> <br/> 
+            </div>
+            <button type="submit" id = "Register">Login</button>
+        </form>
+    </div>
+    </body>
+<header>
+    <nav class = "front">
+      <div class="logo">
+        <img src="logo.PNG" alt="Zoomcar Logo">
+      </div>
+      
+      <div class="user-actions">
+        <button class="login-btn" id = "loginbtn" >Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1><b>Your Next Adventure</b></h1>
+          <p><b>Rent a car for your next trip and explore with freedom.</b></p>
+          <button id="explore-btn">Explore</button>
+        </div>
+      </section>
+    <br />
+  </header>
+
+  <section class="search-filter">
+    <div class="search-bar">
+      <input type="text" id="location-input" placeholder="Enter Location">
+      <input type="date" id="date-input">
+      <input type="time" id="time-input">
+      <label for="car-type"> Car Type: </label>
+
+      <select id="car-type">
+        <option value="all">All</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="hatchback">Hatchback</option>
+      </select>
+
+      <button id="search-btn">Search</button>
+    </div>
+  </section>
+
+      <nav class = "bottom">
+        <ul class="menu">
+          <button class = "bottom_btn"><li><a href="#">HOME</a></li></button>
+          <button class = "bottom_btn"><li><a href="#">CARS</a></li></button>
+          <button class = "bottom_btn"><li><a href="#">ABOUT</a></li></button>
+          </ul>
+      </nav>
+
+  <body>
+    <br/>
+    <section class="car-listings">
+        <div class="car-card">
+          <img src="car1.png" alt="Car 2">
+            <h2>Mercedes-Benz</h2>
+            <p>Automatic Diesel 6 Seats</p>
+            <hr>
+            <p>Available from 25 June</p>
+            <p id = "Price">₹660/hr</p>
+            <button id="view-details-btn" class = "view-btn">View Details</button>
+        </div>
+
+        <div class="car-card">
+          <img src="car2.jpg" alt="Car 2">
+            <h2>Audi</h2>
+            <p>Automatic Diesel 8 Seats</p>
+            <hr>
+            <p>Available from 05 June</p>
+            <p id = "Price">₹760/hr</p>
+            <button id="view-details1-btn" class = "view-btn">View Details</button>
+        </div>
+      
+        <div class="car-card">
+          <img src="car3.jpg" alt="Car 2">
+            <h2>Flying Spur</h2>
+            <p>Automatic Diesel 5 Seats</p>
+            <hr>
+            <p>Available from 06 June</p>
+            <p id = "Price">₹500/hr</p>
+            <button id="view-details2-btn" class = "view-btn">View Details</button>
+        </div>
+
+          <div class="car-card">
+            <img src="car4.jpg" alt="Car 2">
+            <h2>Maverick</h2>
+            <p>Gear Diesel 6 Seats</p>
+            <hr>
+            <p>Available from 30 June</p>
+            <p id = "Price">₹800/hr</p>
+            <button id="view-details3-btn" class = "view-btn">View Details</button>
+          </div>
+
+          <div class="car-card">
+            <img src="car1.png" alt="Car 2">
+              <h2>Mercedes-Benz</h2>
+              <p>Automatic Diesel 6 Seats</p>
+              <hr>
+              <p>Available from 25 June</p>
+              <p id = "Price">₹660/hr</p>
+              <button id="view-details4-btn" class = "view-btn">View Details</button>
+          </div>
+  
+          <div class="car-card">
+            <img src="car2.jpg" alt="Car 2">
+              <h2>Audi</h2>
+              <p>Automatic Diesel 8 Seats
+              </p><hr>
+              <p>Available from 05 June</p>
+              <p id = "Price">₹760/hr</p>
+              <button id="view-details5-btn" class = "view-btn">View Details</button>
+          </div>
+        
+          <div class="car-card">
+            <img src="car3.jpg" alt="Car 2">
+              <h2>Flying Spur</h2>
+              <p>Automatic Diesel 5 Seats</p>
+              <hr>
+              <p>Available from 06 June</p>
+              <p id = "Price">₹500/hr</p>
+              <button id="view-details6-btn" class = "view-btn">View Details</button>
+          </div>
+  
+            <div class="car-card">
+              <img src="car4.jpg" alt="Car 2">
+              <h2>Maverick</h2>
+              <p>Gear Diesel 6 Seats</p>
+              <hr>
+              <p>Available from 30 June</p>
+              <p id = "Price">₹800/hr</p>
+              <button id="view-details7-btn" class = "view-btn">View Details</button>
+            </div>
+
+      </section>
+
+    <div id="popup-details">
+      <div id="popup" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle1.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Mercedes-Benz</h2>
+          <p id="car-specs">Automatic Diesel 6 Seats</p> 
+          <p id="car-features">With advanced technology and progressive design, the new C-Class is made for you. 2022 brings the all-new Mercedes-Benz C-Class to India. Magic body control. Blue & Beige interiors. Active park assist. Sporty steering wheel. Wireless Charging Front.</p>
+          <p id="car-reviews">Very spacious</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup1" class="popup hidden">
+        <div id="car-details">
+            <div id="car-images"> 
+              <img src = "vehicle2.png" class = "car-images">
+            </div>
+            <h2 id="car-model">CAR MODEL : Audi </h2>
+            <p id="car-specs">Automatic Diesel 8 Seats</p>     
+            <p id="car-features">The Audi A6 has 1 Petrol Engine on offer. The Petrol engine is 1984 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the A6 has a mileage of 14.11 kmpl & Ground clearance of A6 is 165mm. The A6 is a 5 seater 4 cylinder car and has length of 4939mm, width of 2110mm and a wheelbase of 2930mm.</p>
+            <p id="car-reviews">Very nice</p>
+            <button id="close-btn">Close</button>
+          </div>
+      </div>
+
+      <div id="popup2" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle3.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Flying Spur </h2>
+          <p id="car-specs">Automatic  Diesel 5 Seats</p>
+          <p id="car-features">The car features Apple CarPlay* and a built-in Wi-Fi hotspot. Passengers in the rear can control features from the audio system to the heating and ventilation </p>
+          <p id="car-reviews">Comfortable</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup3" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle4.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Maverick </h2>
+          <p id="car-specs">Automatic  Diesel 6 Seats</p>
+          <p id="car-features">Part of the reason why Top Gun: Maverick has been so successful is because it can tap into the cultural familiarity of the original Top Gun. At the same time, most legacy sequels aren't so well received by audiences or critics – so this can't be the only factor that led to the movie's success. Strong new talent.</p>
+          <p id="car-reviews">Comfortable and spacious</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup4" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle5.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Mercedes-Benz </h2>
+          <p id="car-specs">Automatic  Diesel 6 Seats</p>   
+          <p id="car-features">Mercedes-Benz Introduced the First Petrol Car to the World
+
+            Karl Benz invented the very first petrol car in the world. In 1886, he patented his three-wheeled automobile powered by petrol– the “Motoragen”. Later on Benz's wife, Bertha took the car out for a 130-mile tour ride through Germany along with their two sons.</p>
+          <p id="car-reviews">Free and comfortable</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup5" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle6.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Maverick </h2>
+          <p id="car-specs">Automatic  Diesel 7 Seats</p>
+          <p id="car-features">Part of the reason why Top Gun: Maverick has been so successful is because it can tap into the cultural familiarity of the original Top Gun. At the same time, most legacy sequels aren't so well received by audiences or critics – so this can't be the only factor that led to the movie's success. Strong new talent.
+          </p>
+          <p id="car-reviews">Very nice</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup6" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle1.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Tata Safari 2022 </h2>
+          <p id="car-specs">Automatic  Diesel 7 Seats</p>
+          <p id="car-features">From Comfort perspective, Safari have Adjustable Headrests, Adjustable steering, Instrument Console, Keyless Entry, Multifunction Steering Wheel, - Odometer, Powered Seats, Power Steering, Power Windows, Rear Amrest, Driver's seat heigth adjust, Tachometer.</p>
+          <p id="car-reviews">comfortable</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+
+      <div id="popup7" class="popup hidden">
+        <div id="car-details">
+          <div id="car-images"> 
+            <img src = "vehicle2.png" class = "car-images">
+          </div>
+          <h2 id="car-model">CAR MODEL : Flying Spur </h2>
+          <p id="car-specs">Automatic  Diesel 5 Seats</p>
+          <p id="car-features">The car features Apple CarPlay* and a built-in Wi-Fi hotspot. Passengers in the rear can control features from the audio system to the heating and ventilation </p>
+          <p id="car-reviews">Comfortable</p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <div class = "add">
+      <img class = bottomimg src = "bottomimg.jpg" alt = "Image not found">
+    </div>
+
+    <footer>
+      <h3>About Zoomcar</h3>
+      <p>Zoomcar is India’s largest marketplace for cars on rent. From short road trips to quick in-city drives for groceries, supply pick-up, food runs, we have the cheapest car rental options for all your needs! A hatchback for daily commute, a sedan for short trips, SUV for hills or a luxury car for a surprise.
+
+        With Zoomcar, you can experience the convenience of online booking. The cars listed on our platform come with all-India permits that include vehicle insurance. It is extremely easy to pick up the car from the host location. You can drive unlimited KMs, with 100% Free Cancellation up to 6 hours before the trip start, 0 Security Deposit, 0 Toll Charges, and 24/7 Roadside Assistance. Car rent per KM starts as low as Rs. 49/hour. From short road trips to quick in-city drives for groceries, supply pick-up, meeting friends and family, doctor visits, business trips, we have the cheapest car rental options for all your needs! A hatchback for daily commute, a sedan for short trips, SUV for hills or a luxury car for a surprise.</p>
+      
+      <h3>Why Zoomcar?</h3>
+      <p>Unlimited KMs
+        You must never stop exploring! That’s why you get unlimited KMs with every booking!
+        
+        No Paperwork
+        Rent a car & start traveling with zero paperwork requirements! All you need in your driver’s license, national ID & a live selfie!
+        
+        Short-Duration
+        Why pay for a full day when you need the car for only 8 hours? Zoomcar lets you rent a car for as low as 8 hours only!
+        
+        Long-Duration
+        Don’t put a limit to your travel plans - our long-duration bookings are here for you. Remember, the longer you book for, the more you save!
+        
+        Keyless Access
+        No need to meet the Hosts during the beginning & end of any booking! The Zoommcar smart-app allows you to lock & unlock the car directly through the app!
+        
+        Zoomcar gives you the freedom of self-drive! With budget car rental solutions, Zoomcar offers the best offers, the cheapest prices and a wide range of cars to choose from. Get unlimited KMs, Free Cancellation, 0 Security Deposit, 0 Toll Charges, and 24/7 Roadside Assistance. Car rent per KM starts as low as Rs. 49/hour.</p>
+
+        <h3>Flying Soon? We’ll Be There!</h3>
+        <p>No waiting for cabs or fighting the fares anymore - Zoomcar provides Airport trip services. The airport car rent service allows you to book a car from the airport & drive it home. Arrive in any city worry-free! We assure you unbeatable prices!
+
+        <br/>
+
+    </footer>
+    
+
+  </body>
+  </html>
